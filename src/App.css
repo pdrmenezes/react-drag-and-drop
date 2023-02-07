@@ -1,0 +1,101 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.available-pokemon,
+.party-board {
+  width: 95%;
+}
+.pokemon-list {
+  outline: 1px solid rgba(255, 255, 255, 0.87);
+}
+
+.party-list {
+  outline: 1px dashed rgba(255, 255, 255, 0.87);
+}
+.pokemon-list,
+.party-list {
+  padding: 1rem;
+  height: max-content;
+}
+
+.empty-slot {
+  outline: 1px dashed rgba(255, 255, 255, 0.87);
+  cursor: default;
+}
+
+.pokemon-tag,
+.party-tag {
+  border-radius: 100px;
+  margin: 0.8rem auto;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+}
+.pokemon-tag {
+  outline: 1px solid rgba(255, 255, 255, 0.87);
+}
+
+.pokemon-tag:hover {
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #242424 !important;
+}
+
+.EmptySlot {
+  outline: 1px dashed rgba(255, 255, 255, 0.87);
+  cursor: default;
+}
+
+.Bulbasaur {
+  background-color: rgb(134, 199, 164);
+}
+.Squirtle {
+  background-color: rgb(138, 187, 211);
+}
+
+.Charmander {
+  background-color: rgb(251, 138, 65);
+}
+
+.Pikachu {
+  background-color: rgb(241, 228, 82);
+  color: #5c5c5c;
+}
+
+.party-tag:hover {
+  filter: brightness(1.1);
+}
+
+@media (prefers-color-scheme: light) {
+  .pokemon-list {
+    outline: 1px solid #242424;
+  }
+
+  .party-list {
+    outline: 1px dashed #242424;
+  }
+
+  .pokemon-tag {
+    outline: 1px solid #242424;
+  }
+  .pokemon-tag:hover {
+    background-color: #242424;
+    color: rgba(255, 255, 255, 0.87) !important;
+  }
+  .empty-slot {
+    outline: 1px dashed #242424 !important;
+    cursor: default !important;
+  }
+
+  .Pikachu {
+    color: #242424;
+  }
+}
