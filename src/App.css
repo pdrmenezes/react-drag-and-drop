@@ -28,11 +28,6 @@ main {
   height: max-content;
 }
 
-.empty-slot {
-  outline: 1px dashed rgba(255, 255, 255, 0.87);
-  cursor: default;
-}
-
 .pokemon-tag,
 .party-tag {
   border-radius: 100px;
@@ -90,7 +85,7 @@ main {
     background-color: #242424;
     color: rgba(255, 255, 255, 0.87) !important;
   }
-  .empty-slot {
+  .EmptySlot {
     outline: 1px dashed #242424 !important;
     cursor: default !important;
   }
